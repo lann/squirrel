@@ -6,7 +6,7 @@ import (
 	"sync"
 )
 
-// Prepareer is the interface that wraps the Prepare method.
+// Preparer is the interface that wraps the Prepare method.
 //
 // Prepare executes the given query as implemented by database/sql.Prepare.
 type Preparer interface {

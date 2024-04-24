@@ -177,7 +177,7 @@ func DebugSqlizer(s Sqlizer) string {
 			"[DebugSqlizer error: not enough placeholders in %#v for %d args]",
 			sql, len(args))
 	}
-	// "append" any remaning sql that won't need interpolating
+	// "append" any remaining sql that won't need interpolating
 	buf.WriteString(sql)
 	return buf.String()
 }
