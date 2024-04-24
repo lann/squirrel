@@ -1,3 +1,4 @@
+//go:build go1.8
 // +build go1.8
 
 package squirrel
@@ -7,9 +8,9 @@ import (
 	"database/sql"
 )
 
-// PrepareerContext is the interface that wraps the Prepare and PrepareContext methods.
+// PreparerContext is the interface that wraps the Preparer and PrepareContext methods.
 //
-// Prepare executes the given query as implemented by database/sql.Prepare.
+// Preparer executes the given query as implemented by database/sql.Prepare.
 // PrepareContext executes the given query as implemented by database/sql.PrepareContext.
 type PreparerContext interface {
 	Preparer
